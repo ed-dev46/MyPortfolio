@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Bounded';
+    src: url("../public/fonts/bounded/Bounded-Variable.ttf") format(".ttf");
+}
+
+* {
+    font-family: 'Bounded';
+}
+
+section {
+    @apply flex h-screen p-14;
+}
+
+.section-title {
+    @apply font-medium uppercase text-7xl;
+}
+
+.navbar-item {
+    @apply text-5xl uppercase font-medium;
+}
+
+.projects-card {
+    @apply shadow-lg;
+}
+
+.projects-card-img {
+    @apply bg-sky-100 h-[40%];
+}
+
+.projects-desc {
+    @apply h-[60%] flex flex-col justify-between p-5;
+}
+
+.projects-desc-title {
+    @apply text-3xl uppercase font-medium;
+}
+
+.projects-desc-text {
+    @apply text-lg;
+}
+
+.projects-card-btn {
+    @apply inline-flex p-3 leading-7 text-white shadow-lg capitalize;
+}
+
+.projects-card-btn-icon {
+    @apply mr-3 invert size-7;
+}
