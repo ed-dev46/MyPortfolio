@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'Bounded';
-    src: url("../public/fonts/bounded/Bounded-Variable.ttf") format(".ttf");
+    src: url("../public/fonts/bounded/Bounded-Variable.ttf");
 }
 
 * {
     font-family: 'Bounded';
 }
 
-section {
-    @apply flex h-screen p-14;
+.section-container {
+    @apply h-screen flex p-7 border;
 }
 
 .section-title {
-    @apply font-medium uppercase text-7xl;
+    @apply font-medium uppercase text-7xl mb-7;
 }
 
 .navbar-item {
@@ -47,4 +47,8 @@ section {
 
 .projects-card-btn-icon {
     @apply mr-3 invert size-7;
+}
+
+.about-me-skill-container {
+    @apply flex p-7;
 }
