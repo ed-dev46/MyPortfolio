@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-brackets-title',
@@ -8,6 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BracketsTitleComponent {
 
-  @Input() titleText: string = '';
+  @Input() titleText: string = "";
 
 }

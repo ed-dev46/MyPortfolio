@@ -10,7 +10,7 @@
 }
 
 .section-container {
-    @apply h-screen flex p-7 border;
+    @apply h-screen flex p-14;
 }
 
 .section-title {
