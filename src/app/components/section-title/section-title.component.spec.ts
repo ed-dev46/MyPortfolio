@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BracketsTitleComponent } from './brackets-title.component';
+import { SectionTitleComponent } from './section-title.component';
 
-describe('BracketsTitleComponent', () => {
-  let component: BracketsTitleComponent;
-  let fixture: ComponentFixture<BracketsTitleComponent>;
+describe('SectionTitleComponent', () => {
+  let component: SectionTitleComponent;
+  let fixture: ComponentFixture<SectionTitleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BracketsTitleComponent]
+      imports: [SectionTitleComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BracketsTitleComponent);
+    fixture = TestBed.createComponent(SectionTitleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

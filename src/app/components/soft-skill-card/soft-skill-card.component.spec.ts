@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TitleDecorationComponent } from './title-decoration.component';
+import { SoftSkillCardComponent } from './soft-skill-card.component';
 
-describe('TitleDecorationComponent', () => {
-  let component: TitleDecorationComponent;
-  let fixture: ComponentFixture<TitleDecorationComponent>;
+describe('SoftSkillCardComponent', () => {
+  let component: SoftSkillCardComponent;
+  let fixture: ComponentFixture<SoftSkillCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TitleDecorationComponent]
+      imports: [SoftSkillCardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TitleDecorationComponent);
+    fixture = TestBed.createComponent(SoftSkillCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

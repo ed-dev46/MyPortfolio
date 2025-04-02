@@ -1,5 +1,6 @@
 <section class="section-container flex-col">
-    <app-title-decoration class="text-7xl" titleText="um pouco sobre mim..."></app-title-decoration>
+    
+    <app-section-title titleText="um pouco sobre mim"></app-section-title>
         <div class="grid grid-cols-2 grid-rows-6 gap-3 h-full">
             <div class="p-7 order-1 row-span-4 text-2xl shadow-xl text-justify">
                 <p class="mb-7 font-medium uppercase text-5xl"><span class="text-sky-500">_</span>quem sou eu</p>
@@ -17,21 +18,22 @@
                 </div>
             </div>
 
-            <div class="order-1 row-span-6 shadow-xl">
-                <div class="h-[25%] relative group overflow-hidden z-10">
-                    <div class="group-hover:translate-x-full transition absolute top-0 left-0 size-full flex justify-center items-center uppercase font-bold text-7xl text-sky-500 bg-white">&#123;&nbsp;<span class="text-black">adaptavel</span>&nbsp;&#125;</div>
-                    <p class="bg-sky-500 text-2xl text-white p-7 size-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum harum possimus quibusdam ullam aut incidunt vitae eum aliquid libero.</p>
-                </div>
-                <div class="h-[25%] relative group overflow-hidden">
-                    <div class="group-hover:translate-x-full transition absolute top-0 left-0 size-full flex justify-center items-center uppercase font-bold text-7xl text-sky-500 bg-white">&#123; comunicativo &#125;</div>
-                    <p class="bg-sky-500 text-2xl text-white p-7 size-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum harum possimus quibusdam ullam aut incidunt vitae eum aliquid libero.</p>
-                </div><div class="h-[25%] relative group overflow-hidden">
-                    <div class="group-hover:translate-x-full transition absolute top-0 left-0 size-full flex justify-center items-center uppercase font-bold text-7xl text-sky-500 bg-white">&#123; cooperativo &#125;</div>
-                    <p class="bg-sky-500 text-2xl text-white p-7 size-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum harum possimus quibusdam ullam aut incidunt vitae eum aliquid libero.</p>
-                </div><div class="h-[25%] relative group overflow-hidden">
-                    <div class="group-hover:translate-x-full transition absolute top-0 left-0 size-full flex justify-center items-center uppercase font-bold text-7xl text-sky-500 bg-white">&#123; resiliente &#125;</div>
-                    <p class="bg-sky-500 text-2xl text-white p-7 size-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum harum possimus quibusdam ullam aut incidunt vitae eum aliquid libero.</p>
-                </div>
+            <div class="order-1 row-span-6 shadow-xl inline-flex flex-col">
+                
+                <app-soft-skill-card class="flex grow" skillTitle="adaptavel">
+                    Encaro desafios como uma oportunidade de crescimento. Sempre estou pronto para aprender, discutir sobre melhorias e resolver problemas de uma forma criativa.
+                </app-soft-skill-card>
+                <app-soft-skill-card class="flex grow" skillTitle="comunicativo">
+                    Gosto de manter uma comunicação clara, objetiva e simples. Me orgulho de ter a habilidade de explicar conceitos técnicos complexos através de analogias.
+                </app-soft-skill-card>
+                <app-soft-skill-card class="flex grow" skillTitle="cooperativo">
+                    Sozinho eu sei que não estaria onde estou. Valorizo muito o trabalho em equipe, pois quando nós compartilhamos nossas forças e talentos, podemos chegar em patamares jamais vistos.
+                </app-soft-skill-card>
+                <app-soft-skill-card class="flex grow" skillTitle="resiliente">
+                    Errar é parte do processo. Com dedicação, disciplina e coragem, podemos chegar e fazer o que quisermos. Tudo é possível.
+                </app-soft-skill-card>
+                
+                
             </div>
     </div>
 </section>

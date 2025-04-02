@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { TitleDecorationComponent } from "../title-decoration/title-decoration.component";
-import { BracketsTitleComponent } from "../brackets-title/brackets-title.component";
+import { SectionTitleComponent } from "../section-title/section-title.component";
+import { SoftSkillCardComponent } from '../soft-skill-card/soft-skill-card.component';
 
 @Component({
   selector: 'app-about-me',
-  imports: [TitleDecorationComponent, BracketsTitleComponent],
+  imports: [SectionTitleComponent, SoftSkillCardComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css'
 })

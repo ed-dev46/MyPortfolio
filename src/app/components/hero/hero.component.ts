@@ -1,10 +1,10 @@
 import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
-import { TitleDecorationComponent } from "../title-decoration/title-decoration.component";
-import { BracketsTitleComponent } from '../brackets-title/brackets-title.component';
+import { SectionTitleComponent } from "../section-title/section-title.component";
+import { HeroCaretComponent } from "../hero-caret/hero-caret.component";
 
 @Component({
   selector: 'app-hero',
-  imports: [TitleDecorationComponent, BracketsTitleComponent],
+  imports: [SectionTitleComponent, HeroCaretComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })

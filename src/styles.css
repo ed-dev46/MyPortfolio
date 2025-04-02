@@ -10,11 +10,7 @@
 }
 
 .section-container {
-    @apply h-screen flex p-14;
-}
-
-.section-title {
-    @apply font-medium uppercase text-7xl mb-7;
+    @apply h-screen flex py-14 px-27;
 }
 
 .navbar-item {
@@ -47,8 +43,4 @@
 
 .projects-card-btn-icon {
     @apply mr-3 invert size-7;
-}
-
-.about-me-skill-container {
-    @apply flex p-7;
 }
