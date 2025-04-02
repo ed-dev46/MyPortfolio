@@ -1,25 +1,19 @@
 <section class="section-container flex-col">
     
-    <app-section-title titleText="um pouco sobre mim"></app-section-title>
-        <div class="grid grid-cols-2 grid-rows-6 gap-3 h-full">
-            <div class="p-7 order-1 row-span-4 text-2xl shadow-xl text-justify">
-                <p class="mb-7 font-medium uppercase text-5xl"><span class="text-sky-500">_</span>quem sou eu</p>
-                <p class="mb-5">Desde sempre, fui movido pela curiosidade. Esse mesmo combustível me levou à área de desenvolvimento. Sempre preferi buscar soluções em vez de apenas reclamar dos problemas e, quando conheci o mundo do desenvolvimento de software, foi paixão à primeira vista.</p>
-                <p>Atualmente, estou em busca da minha primeira oportunidade para ingressar formalmente na área.</p>
-            </div>
-
-            <div class="p-5 order-3 row-span-2 shadow-xl">
-                <p class="mb-7 font-medium uppercase text-5xl"><span class="text-sky-500">_</span>tecnologias</p>
-                <div class="flex justify-evenly">
-                    <img class="size-30" src="images/csharp.svg" alt="csharp">
-                    <img class="size-30" src="images/angular.svg" alt="angular">
-                    <img class="size-30" src="images/javascript.svg" alt="javascript">
-                    <img class="size-30" src="images/java.svg" alt="java">
+        <app-section-title titleText="quem sou eu"></app-section-title>
+        <div class="flex flex-row shadow-xl">
+            <div class="p-14 text-xl text-justify max-w-[50%] flex flex-col gap-7">
+                <p>Desde sempre, fui movido pela curiosidade. Esse mesmo combustível me levou à área de desenvolvimento. Sempre preferi buscar soluções em vez de apenas reclamar dos problemas e, quando conheci o mundo do desenvolvimento de software, foi paixão à primeira vista.</p>
+                <p>Atualmente, estou em busca da minha primeira oportunidade para ingressar formalmente na área. Enquanto isso, sigo aprimorando meus conhecimentos e atuando como freelancer.</p>
+                <a href="" class="my-auto font-semibold text-center hover:text-sky-500 transition"><span class="text-sky-500">&#123;&nbsp;</span>Clique aqui para obter uma cópia do meu currículo!<span class="text-sky-500">&nbsp;&#125;</span></a>
+                <div class="inline-flex max-w-full gap-7 mt-auto">
+                    <img class="size-10 h-full grow object-contain" src="images/csharp.svg" alt="">
+                    <img class="size-10 h-full grow object-contain" src="images/angular.svg" alt="">
+                    <img class="size-10 h-full grow object-contain" src="images/javascript.svg" alt="">
+                    <img class="size-10 h-full grow object-contain" src="images/java.svg" alt="">
                 </div>
             </div>
-
-            <div class="order-1 row-span-6 shadow-xl inline-flex flex-col">
-                
+            <div class="inline-flex flex-col">
                 <app-soft-skill-card class="flex grow" skillTitle="adaptavel">
                     Encaro desafios como uma oportunidade de crescimento. Sempre estou pronto para aprender, discutir sobre melhorias e resolver problemas de uma forma criativa.
                 </app-soft-skill-card>
@@ -32,8 +26,6 @@
                 <app-soft-skill-card class="flex grow" skillTitle="resiliente">
                     Errar é parte do processo. Com dedicação, disciplina e coragem, podemos chegar e fazer o que quisermos. Tudo é possível.
                 </app-soft-skill-card>
-                
-                
             </div>
     </div>
 </section>

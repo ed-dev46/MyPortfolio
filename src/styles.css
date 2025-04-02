@@ -10,7 +10,7 @@
 }
 
 .section-container {
-    @apply h-screen flex py-14 px-27;
+    @apply flex py-14 px-42;
 }
 
 .navbar-item {

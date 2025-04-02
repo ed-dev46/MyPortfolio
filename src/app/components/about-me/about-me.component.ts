@@ -9,5 +9,7 @@ import { SoftSkillCardComponent } from '../soft-skill-card/soft-skill-card.compo
   styleUrl: './about-me.component.css'
 })
 export class AboutMeComponent {
+  
+  
 
 }
