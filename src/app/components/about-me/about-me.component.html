@@ -5,12 +5,21 @@
             <div class="p-7 text-xl text-justify flex flex-col gap-7 min-w-[50%]">
                 <p>O que me diferencia dos outros</p>
                 <p>Atualmente, estou em busca da minha primeira oportunidade para ingressar formalmente na área. Enquanto isso, sigo aprimorando meus conhecimentos e atuando como freelancer.</p>
-                <a href="" class="my-auto font-semibold text-center hover:text-sky-500 transition"><span class="text-sky-500">&#123;&nbsp;</span>Clique aqui para obter uma cópia do meu currículo!<span class="text-sky-500">&nbsp;&#125;</span></a>
+                <a href="" class="my-auto font-semibold text-center hover:text-sky-500 transition-colors ease-in-out"><span class="text-sky-500">&#123;&nbsp;</span>Clique aqui para obter uma cópia do meu currículo!<span class="text-sky-500">&nbsp;&#125;</span></a>
+                
                 <div class="inline-flex max-w-full gap-7 mt-auto">
-                    <app-hard-skill-card skillName="C#" skillImgUrl="images/csharp.svg" class="hard-skill-card after:bg-csharp after:content-['C#'] before:content-['Criação de sistemas robustos']"></app-hard-skill-card>
-                    <app-hard-skill-card skillName="Angular" skillImgUrl="images/angular.svg" class="hard-skill-card after:bg-angular after:content-['Angular']"></app-hard-skill-card>
-                    <app-hard-skill-card skillName="Javascript" skillImgUrl="images/javascript.svg" class="hard-skill-card after:bg-javascript after:content-['Javascript']"></app-hard-skill-card>
-                    <app-hard-skill-card skillName="Java" skillImgUrl="images/java.svg" class="hard-skill-card after:bg-java after:content-['Java']"></app-hard-skill-card>
+                    <app-hard-skill-card skillName="C#" skillImgUrl="images/csharp.svg" class="grow relative flex group">
+                        <span class="after-up after:content-['C#'] after:bg-csharp"></span>
+                    </app-hard-skill-card>
+                    <app-hard-skill-card skillName="Angular" skillImgUrl="images/angular.svg" class="grow flex relative group">
+                        <span class="after-up after:content-['Angular'] after:bg-angular"></span>
+                    </app-hard-skill-card>
+                    <app-hard-skill-card skillName="Javascript" skillImgUrl="images/javascript.svg" class="grow flex relative group">
+                        <span class="after-up after:content-['Javascript'] after:bg-javascript"></span>
+                    </app-hard-skill-card>
+                    <app-hard-skill-card skillName="Java" skillImgUrl="images/java.svg" class="grow flex relative group">
+                        <span class="after-up after:content-['Java'] after:bg-java"></span>
+                    </app-hard-skill-card>
                 </div>
             </div>
             <div class="inline-flex flex-col grow">
