@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { SectionTitleComponent } from "../section-title/section-title.component";
 import { HeroCaretComponent } from "../hero-caret/hero-caret.component";
 
@@ -8,21 +8,6 @@ import { HeroCaretComponent } from "../hero-caret/hero-caret.component";
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
-export class HeroComponent implements OnInit {
+export class HeroComponent {
 
-  caretAnimationText: string = "";
-  
-  constructor(private renderer: Renderer2, private el: ElementRef) { }
-
-  ngOnInit(): void {
-    this.loadScript();
-  }
-
-  loadScript(): void {
-    let script = this.renderer.createElement("script");
-    script.type = "text/javascript";
-    script.src = "scripts/caretAnimation.js";
-    
-    this.renderer.appendChild(this.el.nativeElement, script);
-  }
 }

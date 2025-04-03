@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+    --color-csharp: #8900F4;
+    --color-angular: #F40000;
+    --color-javascript: #F4D400;
+    --color-java: #00A6F4;
+
+}
+
 @font-face {
     font-family: 'Bounded';
     src: url("../public/fonts/bounded/Bounded-Variable.ttf");
@@ -43,4 +51,8 @@
 
 .projects-card-btn-icon {
     @apply mr-3 invert size-7;
+}
+
+.hard-skill-card {
+    @apply text-white font-semibold after:transition after:absolute after:left-[50%] after:-translate-x-[50%] after:rounded-full after:p-3 after:opacity-0 grow flex relative hover:after:opacity-100 hover:after:-translate-y-[120%];
 }

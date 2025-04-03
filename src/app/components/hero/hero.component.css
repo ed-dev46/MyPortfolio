@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.hero-media-span {
+    @apply before:absolute before:top-[50%] before:-translate-y-[50%] before:left-[100%] before:text-nowrap before:font-semibold before:text-2xl;
+}

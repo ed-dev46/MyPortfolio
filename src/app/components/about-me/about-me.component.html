@@ -2,18 +2,18 @@
     
         <app-section-title titleText="quem sou eu"></app-section-title>
         <div class="flex flex-row shadow-xl">
-            <div class="p-14 text-xl text-justify max-w-[50%] flex flex-col gap-7">
-                <p>Desde sempre, fui movido pela curiosidade. Esse mesmo combustível me levou à área de desenvolvimento. Sempre preferi buscar soluções em vez de apenas reclamar dos problemas e, quando conheci o mundo do desenvolvimento de software, foi paixão à primeira vista.</p>
+            <div class="p-7 text-xl text-justify flex flex-col gap-7 min-w-[50%]">
+                <p>O que me diferencia dos outros</p>
                 <p>Atualmente, estou em busca da minha primeira oportunidade para ingressar formalmente na área. Enquanto isso, sigo aprimorando meus conhecimentos e atuando como freelancer.</p>
                 <a href="" class="my-auto font-semibold text-center hover:text-sky-500 transition"><span class="text-sky-500">&#123;&nbsp;</span>Clique aqui para obter uma cópia do meu currículo!<span class="text-sky-500">&nbsp;&#125;</span></a>
                 <div class="inline-flex max-w-full gap-7 mt-auto">
-                    <img class="size-10 h-full grow object-contain" src="images/csharp.svg" alt="">
-                    <img class="size-10 h-full grow object-contain" src="images/angular.svg" alt="">
-                    <img class="size-10 h-full grow object-contain" src="images/javascript.svg" alt="">
-                    <img class="size-10 h-full grow object-contain" src="images/java.svg" alt="">
+                    <app-hard-skill-card skillName="C#" skillImgUrl="images/csharp.svg" class="hard-skill-card after:bg-csharp after:content-['C#'] before:content-['Criação de sistemas robustos']"></app-hard-skill-card>
+                    <app-hard-skill-card skillName="Angular" skillImgUrl="images/angular.svg" class="hard-skill-card after:bg-angular after:content-['Angular']"></app-hard-skill-card>
+                    <app-hard-skill-card skillName="Javascript" skillImgUrl="images/javascript.svg" class="hard-skill-card after:bg-javascript after:content-['Javascript']"></app-hard-skill-card>
+                    <app-hard-skill-card skillName="Java" skillImgUrl="images/java.svg" class="hard-skill-card after:bg-java after:content-['Java']"></app-hard-skill-card>
                 </div>
             </div>
-            <div class="inline-flex flex-col">
+            <div class="inline-flex flex-col grow">
                 <app-soft-skill-card class="flex grow" skillTitle="adaptavel">
                     Encaro desafios como uma oportunidade de crescimento. Sempre estou pronto para aprender, discutir sobre melhorias e resolver problemas de uma forma criativa.
                 </app-soft-skill-card>
