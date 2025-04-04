@@ -10,5 +10,6 @@ export class ProjectCardComponent {
 
   @Input() projectTitle: string = "";
   @Input() projectImgUrl: string = "";
+  @Input() projectStacks: string[] = [];
 
 }
