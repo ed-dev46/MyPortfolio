@@ -17,7 +17,7 @@
 }
 
 .section-container {
-    @apply flex py-14 px-42;
+    @apply flex px-5 py-14 border;
 }
 
 .navbar-item {
