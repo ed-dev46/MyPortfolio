@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.hero-social-link {
+    @apply flex flex-row justify-center items-center p-2 text-xs h-10 rounded-full shadow-xl font-semibold text-white;
+}
