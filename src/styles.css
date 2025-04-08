@@ -16,10 +16,6 @@
     font-family: 'Bounded';
 }
 
-.section-container {
-    @apply flex px-5 py-14 border;
-}
-
 .navbar-item {
     @apply text-5xl uppercase font-medium;
 }
