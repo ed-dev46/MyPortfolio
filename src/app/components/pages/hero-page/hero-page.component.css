@@ -9,5 +9,5 @@
 }
 
 .hero-social-link-span {
-    @apply xl:absolute xl:transition xl:pointer-events-none xl:ease-in-out xl:top-0 xl:left-[50%] xl:-translate-x-[50%] xl:group-hover:-translate-y-15 xl:opacity-0 xl:group-hover:opacity-100 xl:text-nowrap xl:shadow-xl xl:p-3 xl:rounded-full xl:group-hover:inset-ring-3 xl:scale-0 xl:group-hover:scale-100;
+    @apply xl:absolute xl:transition xl:pointer-events-none xl:ease-in-out xl:top-0 xl:left-[50%] xl:-translate-x-[50%] xl:group-hover:-translate-y-15 xl:opacity-0 xl:group-hover:opacity-100 xl:text-nowrap xl:shadow-xl xl:p-3 xl:rounded-full xl:scale-0 xl:group-hover:scale-100;
 }
