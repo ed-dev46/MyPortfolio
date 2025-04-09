@@ -1,24 +1,23 @@
 @import "tailwindcss";
 
-@theme {
-    --color-csharp: #8900F4;
-    --color-angular: #F40000;
-    --color-javascript: #F4D400;
-    --color-java: #00A6F4;
-}
-
 @font-face {
     font-family: 'Bounded';
     src: url("../public/fonts/bounded/Bounded-Variable.ttf");
 }
 
-* {
-    font-family: 'Bounded';
+@theme {
+    --color-csharp: #8900F4;
+    --color-angular: #F40000;
+    --color-javascript: #F4D400;
+    --color-java: #00A6F4;
+    --font-bounded: 'Bounded', 'sans-serif';
 }
 
-.navbar-item {
-    @apply text-5xl uppercase font-medium;
+* {
+    @apply font-bounded;
 }
+
+
 
 .projects-card {
     @apply shadow-lg;

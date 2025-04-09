@@ -1,7 +1,12 @@
-<header class="hidden fixed w-screen bg-white shadow-lg p-7 z-20">
-    <ul class="flex w-full justify-evenly">
+<header class="fixed flex flex-col w-screen bg-white shadow-xl p-5 pt-20 xl:p-7 z-20 transition ease-in-out duration-200 xl:translate-y-0" [ngClass]="menuOpen ? 'translate-y-0' : '-translate-y-85'">
+    <ul class="flex flex-col xl:flex-row items-center xl:justify-center gap-14 w-full transition duration-1000 mb-5">
         <li class="navbar-item"><a href="#"><span class="text-sky-500">&#47;&nbsp;</span>Sobre mim</a></li>
         <li class="navbar-item"><a href="#"><span class="text-sky-500">&#47;&nbsp;</span>Projetos</a></li>
         <li class="navbar-item"><a href="#"><span class="text-sky-500">&#47;&nbsp;</span>Contato</a></li>
     </ul>
+    <div class="relative flex h-10 items-center justify-center xl:hidden">
+        <img src="images/menu.svg" class="navbar-mobile-icons" alt="menu" [ngClass]="menuOpen ? 'scale-0 opacity-0' : 'rotate-360 scale-100 opacity-100'" (click)="menuOpen = !menuOpen">
+        <img src="images/close.svg" class="navbar-mobile-icons scale-0 opacity-0" [ngClass]="menuOpen ? 'rotate-360 scale-100 opacity-100' : 'scale-0 opacity-0'" alt="close" (click)="menuOpen = !menuOpen">
+
+    </div>
 </header>

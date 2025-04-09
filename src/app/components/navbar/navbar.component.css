@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.navbar-item {
+    @apply text-5xl uppercase font-medium;
+}
+
+.navbar-mobile-icons {
+    @apply absolute size-10 mx-auto cursor-pointer transition duration-200 ease-in-out;
+}
