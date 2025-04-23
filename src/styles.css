@@ -17,6 +17,10 @@
     @apply font-bounded;
 }
 
+.section-container {
+    @apply xl:max-w-5xl 2xl:max-w-7xl xl:mx-auto p-7 xl:py-14;
+}
+
 .projects-card {
     @apply shadow-lg;
 }
