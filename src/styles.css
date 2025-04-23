@@ -17,8 +17,6 @@
     @apply font-bounded;
 }
 
-
-
 .projects-card {
     @apply shadow-lg;
 }
