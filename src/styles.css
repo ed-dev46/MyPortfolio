@@ -14,7 +14,7 @@
 }
 
 * {
-    @apply font-bounded;
+    @apply font-bounded scroll-smooth;
 }
 
 .section-container {

@@ -1,5 +1,5 @@
 <div class="group z-10 overflow-hidden relative">
-    <p class="top-0 left-0 soft-skill-card absolute text-white transition duration-500 ease-in-out flex grow justify-center items-center text-3xl font-medium uppercase bg-sky-500 size-full xl:group-hover:translate-x-full" [ngClass]="skillOpen ? 'translate-x-full' : 'translate-x-0'" (click)="skillOpen = !skillOpen"><span class="text-black">&#62;&nbsp;</span>{{ skillTitle }}</p>
+    <p class="top-0 left-0 soft-skill-card absolute text-white transition duration-500 ease-in-out flex grow justify-center items-center text-3xl font-medium uppercase bg-sky-500 size-full group-hover:translate-x-full" [ngClass]="skillOpen ? 'translate-x-full' : 'translate-x-0'" (click)="skillOpen = !skillOpen"><span class="text-black">&#62;&nbsp;</span>{{ skillTitle }}</p>
     <p class="text-xl font-medium p-7 text-center bg-black flex items-center justify-center text-white" (click)="skillOpen = !skillOpen">
         <ng-content></ng-content>
     </p>
