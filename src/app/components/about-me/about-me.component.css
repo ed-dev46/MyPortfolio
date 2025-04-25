@@ -1,9 +1,0 @@
-@import "tailwindcss";
-
-.hard-skill-desc {
-    @apply absolute p-3 bg-black rounded-xl text-white bottom-0 left-[50%] -translate-x-[50%] opacity-0 transition ease-in-out group-hover:opacity-100 scale-0 group-hover:scale-100 group-hover:translate-y-[110%] w-100 text-center text-sm;
-}
-
-.hard-skill-span {
-    @apply after:text-white after:text-xs after:-translate-[50%] shadow-xl after:absolute after:top-0 after:rounded-full after:p-3 after:left-[50%] absolute left-[50%] -translate-x-[50%] transition p-3 pt-5 scale-0 group-hover:scale-100 group-hover:-translate-y-[110%] z-10 bg-white text-sm inline-flex text-center rounded-xl font-semibold w-70 border-3 pointer-events-none;
-}

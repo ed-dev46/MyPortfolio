@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.form-error-message {
+    @apply text-red-500;
+}
