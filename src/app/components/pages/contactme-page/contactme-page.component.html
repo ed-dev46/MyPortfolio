@@ -1,27 +1,30 @@
-<section class="section-container">
-    <app-section-title titleText="contato"></app-section-title>
-    <div class="flex flex-col xl:flex-row gap-14 mt-7">
-        <ul class="flex-1 space-y-14 my-auto flex flex-col items-center">
-            <li><a href="https://linkedin.com/in/edersonjunior-dev" target="_blank" class="rounded-full shadow-xl py-7 px-3 bg-sky-500 text-white font-semibold"><img src="images/linkedin.svg" class="brightness-0 invert inline size-14 mr-3" alt="">Conecte-se comigo no LinkedIn</a></li>
-            <li><a href="https://github.com/ed-dev46" target="_blank" class="rounded-full shadow-xl py-7 px-3 bg-black text-white font-semibold"><img src="images/github.svg" class="invert inline size-14 mr-3" alt="">Acesse meu repositório no Github</a></li>
-            <li><a href="" target="_blank" class="rounded-full shadow-xl py-7 px-3 font-semibold"><img src="images/document.svg" class="inline size-12 mr-3" alt="">Baixe uma cópia do meu currículo</a></li>
-        </ul>
-        <div class="flex-1 shadow-xl p-5">
-            <form action="https://api.web3forms.com/submit" method="post" #contactForm="ngForm" (ngSubmit)="submitEmail(contactForm)" class="flex flex-col space-y-3 text-lg">
-                <label for="senderEmail">De:
-                    <input type="email" name="senderEmail" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" [(ngModel)]="contactFormValues.senderEmail" #senderEmail="ngModel" class="border-b p-1 w-full">
-                </label>
-                <p class="form-error-message" *ngIf="senderEmail.errors && senderEmail.touched && senderEmail.dirty">Insira um email válido!&nbsp;*</p>
-                <label for="receiverEmail">Para:
-                    <input type="email" name="receiverEmail" placeholder="ed.dev46@gmail.com" readonly disabled>
-                </label>
-                <textarea name="emailContent" rows="5" cols="5" minlength="10" placeholder="Escreva sua mensagem com, no mínimo, 10 caracteres" required [(ngModel)]="contactFormValues.emailContent" #emailContent="ngModel" class="p-1"></textarea>
-                <p class="form-error-message" *ngIf="emailContent.errors && emailContent.touched && emailContent.dirty">Insira uma mensagem válida! (No mínimo 10 caracteres)&nbsp;*</p>
-                <div [ngClass]="{ hidden: !showAlert }">
-                    <p class="font-semibold">{{ alertMessage }}</p>
-                </div>
-                <button type="submit" [ngClass]="{'bg-gray-200 cursor-not-allowed': contactForm.invalid || onSubmit, 'bg-sky-500 cursor-pointer text-white': !contactForm.invalid && !onSubmit}" [disabled]="contactForm.invalid || onSubmit" class="p-1 text-xl font-medium">Enviar</button>
-            </form>
+
+<div class="bg-black">
+    <section id="contactme-section" class="section-container bg-black text-white">
+        <p class="my-7 xl:text-7xl text-4xl md:text-6xl uppercase font-black text-center">vamos crescer juntos</p>
+        <div class="flex flex-col xl:flex-row gap-14 mt-14">
+            <ul class="xl:flex-1/2 2xl:flex-1/3 space-y-7 my-auto flex flex-col items-center">
+                <li class="flex w-full"><a href="https://linkedin.com/in/edersonjunior-dev" target="_blank" class="transition ease-in-out hover:inset-ring-3 text-center flex-1 rounded-full p-3 bg-sky-500 text-white font-semibold"><img src="images/linkedin.svg" class="brightness-0 invert inline size-14 mr-3" alt="">Conecte-se comigo no LinkedIn</a></li>
+                <li class="flex w-full"><a href="https://github.com/ed-dev46" target="_blank" class="transition ease-in-out hover:inset-ring-3 hover:inset-ring-sky-500 rounded-full p-3 text-center flex-1 font-semibold bg-white text-black"><img src="images/github.svg" class="inline size-14 mr-3" alt="">Acesse meu repositório no Github</a></li>
+                <li class="flex w-full"><a href="" target="_blank" class="transition ease-in-out hover:inset-ring-3 rounded-full shadow-xl flex-1 text-center p-3 font-semibold"><img src="images/document.svg" class="inline size-12 mr-3" alt="">Baixe uma cópia do meu currículo</a></li>
+            </ul>
+            <div class="xl:flex-2/4 shadow-xl p-5">
+                <form action="https://api.web3forms.com/submit" method="post" #contactForm="ngForm" (ngSubmit)="submitEmail(contactForm)" class="flex flex-col space-y-3 text-lg">
+                    <label for="senderEmail">De:
+                        <input type="email" name="senderEmail" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" [(ngModel)]="contactFormValues.senderEmail" #senderEmail="ngModel" [ngClass]="{'border-b-red-500': senderEmail.errors && senderEmail.touched, 'border-b-sky-500': !senderEmail.errors && senderEmail.touched}" class="border-b p-1 w-full">
+                    </label>
+                    <p class="form-error-message" *ngIf="senderEmail.errors && senderEmail.touched && senderEmail.dirty">Insira um email válido!&nbsp;*</p>
+                    <label for="receiverEmail">Para:
+                        <input type="email" name="receiverEmail" placeholder="ed.dev46@gmail.com" readonly disabled>
+                    </label>
+                    <textarea name="emailContent" rows="5" cols="5" minlength="10" placeholder="Escreva sua mensagem com, no mínimo, 10 caracteres" required [(ngModel)]="contactFormValues.emailContent" #emailContent="ngModel" class="p-1 resize-none"></textarea>
+                    <p class="form-error-message" *ngIf="emailContent.errors && emailContent.touched && emailContent.dirty">Insira uma mensagem válida! (No mínimo 10 caracteres)&nbsp;*</p>
+                    <div [ngClass]="{ hidden: !showAlert }">
+                        <p class="font-semibold text-sky-500 text-center">{{ alertMessage }}</p>
+                    </div>
+                    <button type="submit" [ngClass]="{'bg-gray-500 cursor-not-allowed': contactForm.invalid || onSubmit, 'bg-sky-500 cursor-pointer text-white': !contactForm.invalid && !onSubmit}" [disabled]="contactForm.invalid || onSubmit" class="p-1 text-xl font-medium transition">Enviar</button>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
