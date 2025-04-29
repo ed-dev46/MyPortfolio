@@ -1,22 +1,27 @@
 <section class="section-container">
     <app-section-title titleText="contato"></app-section-title>
-    <ul>
-        <li>conecte-se comigo no linked in</li>
-        <li>acesse meu repositório no github</li>
-    </ul>
-    <div>
-        <form action="https://api.web3forms.com/submit" method="post" class="flex flex-col" #contactForm="ngForm" (ngSubmit)="submitEmail(contactForm)">
-            <label for="senderEmail">De:</label>
-            <input type="email" name="senderEmail" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" [(ngModel)]="contactFormValues.senderEmail" #senderEmail="ngModel">
-            <p class="form-error-message" *ngIf="senderEmail.errors && senderEmail.touched && senderEmail.dirty">Insira um email válido!&nbsp;*</p>
-            <label for="receiverEmail">Para:</label>
-            <input type="email" name="receiverEmail" placeholder="ed.dev46@gmail.com" readonly disabled>
-            <textarea name="emailContent" rows="5" cols="5" minlength="10" placeholder="Escreva sua mensagem com, no mínimo, 10 caracteres" required [(ngModel)]="contactFormValues.emailContent" #emailContent="ngModel"></textarea>
-            <p class="form-error-message" *ngIf="emailContent.errors && emailContent.touched && emailContent.dirty">Insira uma mensagem válida! (No mínimo 10 caracteres)&nbsp;*</p>
-            <div [ngClass]="{ hidden: !showAlert }">
-                <p class="font-semibold">{{ alertMessage }}</p>
-            </div>
-            <button type="submit" [ngClass]="{'bg-gray-200 cursor-not-allowed': contactForm.invalid || onSubmit, 'bg-sky-500 cursor-pointer': !contactForm.invalid && !onSubmit}" [disabled]="contactForm.invalid || onSubmit">Enviar</button>
-        </form>
+    <div class="flex flex-col xl:flex-row gap-14 mt-7">
+        <ul class="flex-1 space-y-14 my-auto flex flex-col items-center">
+            <li><a href="https://linkedin.com/in/edersonjunior-dev" target="_blank" class="rounded-full shadow-xl py-7 px-3 bg-sky-500 text-white font-semibold"><img src="images/linkedin.svg" class="brightness-0 invert inline size-14 mr-3" alt="">Conecte-se comigo no LinkedIn</a></li>
+            <li><a href="https://github.com/ed-dev46" target="_blank" class="rounded-full shadow-xl py-7 px-3 bg-black text-white font-semibold"><img src="images/github.svg" class="invert inline size-14 mr-3" alt="">Acesse meu repositório no Github</a></li>
+            <li><a href="" target="_blank" class="rounded-full shadow-xl py-7 px-3 font-semibold"><img src="images/document.svg" class="inline size-12 mr-3" alt="">Baixe uma cópia do meu currículo</a></li>
+        </ul>
+        <div class="flex-1 shadow-xl p-5">
+            <form action="https://api.web3forms.com/submit" method="post" #contactForm="ngForm" (ngSubmit)="submitEmail(contactForm)" class="flex flex-col space-y-3 text-lg">
+                <label for="senderEmail">De:
+                    <input type="email" name="senderEmail" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" [(ngModel)]="contactFormValues.senderEmail" #senderEmail="ngModel" class="border-b p-1 w-full">
+                </label>
+                <p class="form-error-message" *ngIf="senderEmail.errors && senderEmail.touched && senderEmail.dirty">Insira um email válido!&nbsp;*</p>
+                <label for="receiverEmail">Para:
+                    <input type="email" name="receiverEmail" placeholder="ed.dev46@gmail.com" readonly disabled>
+                </label>
+                <textarea name="emailContent" rows="5" cols="5" minlength="10" placeholder="Escreva sua mensagem com, no mínimo, 10 caracteres" required [(ngModel)]="contactFormValues.emailContent" #emailContent="ngModel" class="p-1"></textarea>
+                <p class="form-error-message" *ngIf="emailContent.errors && emailContent.touched && emailContent.dirty">Insira uma mensagem válida! (No mínimo 10 caracteres)&nbsp;*</p>
+                <div [ngClass]="{ hidden: !showAlert }">
+                    <p class="font-semibold">{{ alertMessage }}</p>
+                </div>
+                <button type="submit" [ngClass]="{'bg-gray-200 cursor-not-allowed': contactForm.invalid || onSubmit, 'bg-sky-500 cursor-pointer text-white': !contactForm.invalid && !onSubmit}" [disabled]="contactForm.invalid || onSubmit" class="p-1 text-xl font-medium">Enviar</button>
+            </form>
+        </div>
     </div>
 </section>
