@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .navbar-item {
-    @apply text-2xl uppercase font-medium;
+    @apply text-2xl uppercase font-medium hover:text-sky-500 transition;
 }
 
 .navbar-mobile-icons {
